@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실시간 지하철 위치</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚇 실시간 지하철 위치</h1>
+        </header>
+        
+        <div class="controls">
+            <select id="lineSelect">
+                <option value="1호선">1호선</option>
+                <option value="2호선">2호선</option>
+                <option value="3호선">3호선</option>
+                <option value="4호선">4호선</option>
+                <option value="5호선">5호선</option>
+                <option value="6호선">6호선</option>
+                <option value="7호선" selected>7호선</option>
+                <option value="8호선">8호선</option>
+                <option value="9호선">9호선</option>
+            </select>
+            <button id="searchBtn">검색</button>
+            <button id="refreshBtn">새로고침</button>
+        </div>
+
+        <div class="status" id="status">
+            7호선을 선택하고 검색 버튼을 눌러주세요.
+        </div>
+
+        <div class="train-list" id="trainList">
+            <!-- 열차 정보가 여기에 표시됩니다 -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
